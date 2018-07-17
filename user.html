@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Users</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    </head>
+    <body>
+<!--start Navbar-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-0">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    Blogen
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2">
+                            <a href="index.html" class="nav-link">DashBoard</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="posts.html" class="nav-link">Posts</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="gatagories.html" class="nav-link">Gatagories</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="user.html" class="nav-link active">Users</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown mr-3">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-user"> Welcome Brad</i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="profile.html" class="dropdown-item">
+                                        <i class="fa fa-user-circle"> Profile</i>
+                                    </a>
+
+                                    <a href="settings.html" class="dropdown-item">
+                                        <i class="fa fa-gear"> Settings</i>
+                                    </a>
+
+                                </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">
+                                <i class="fa fa-user-times"> Logout</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+        </nav>
+<!--end Navbar-->
+        
+<!--start Header-->
+        <header id="main-header" class="bg-warning py-2 text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1><i class="fa fa-users"> Users</i></h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+<!--end Header-->
+        
+
+        
+<!--start Action-->
+        <section id="action" class="py-4 mb-4 lg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 ml-auto">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-grooup-btn">
+                                <button class="btn btn-warning">Search</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--end Action-->
+        
+        <!--start users-->
+               <section id="posts">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">
+                                            <h4>Lastest Users</h4>
+                                        </div>
+
+                                        <table class="table table-striped">
+                                            <thead class="thead-inverse bg-dark text-white">
+                                                <tr>
+                                                    <td>#</td>
+                                                    <td>Name</td>
+                                                    <td>Email</td>
+                                                    <td></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Joen Deo</td>
+                                                    <td>text@yahoo.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row">2</td>
+                                                    <td>Moamen</td>
+                                                    <td>Example@yahoo.com</td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    <nav class="ml-4">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+                                            <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                           </div>
+                      </div>
+                    </div>
+            </section>
+<!--end Users-->
+        
+<!-- start footer-->
+        <footer id="mainfooter" class="p-5 mt-5 text-white bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="lead text-center">Copyright &copy; Blogen</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<!--end Footer-->
+        
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.ckeditor.com/4.10.0/standard/ckeditor.js"></script>
+        <script>
+            CKEDITOR.replace( 'editor1' );
+        </script>
+        
+    </body>
+</html>
